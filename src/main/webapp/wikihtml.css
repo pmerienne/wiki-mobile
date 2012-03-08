@@ -1,0 +1,83 @@
+/* Pas de table of content */
+.toc {
+	display: none;
+}
+
+/* External link with an image */
+a.externallink {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeF59z4EJADEIQ1F36k7u5E7ZKXeUQPACJ3wK7UNokVxVk9kHnQH7bY9hbDyDhNXgjpRLqFlo4M2GgfyJHhjq8V4agfrgPQX3JtJQGbofmCHgA/nAKks+JAjFAAAAAElFTkSuQmCC) center right no-repeat;
+	background: url(//bits.wikimedia.org/skins-1.19/vector/images/external-link-ltr-icon.png?2012-02-10T22:30:00Z) center right no-repeat!ie;
+	padding-right: 13px;
+}
+
+a {
+	text-decoration: none;
+	color: #002BB8;
+	background: none;	
+}
+
+/* Liens vers les images */
+
+.thumbcaption {
+	border-bottom: 1px solid #ABADB0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: auto;
+	padding: 12px;
+	background-color: white;
+	border: 1px solid #ABADB0;
+	border-bottom: none;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sLDBA1C6DucKsAAAAidEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVAgb24gYSBNYWOHqHdDAAAAlElEQVQoz7XQMQqEMBSE4d+ARfBmnsUqEFKksbGNKJ7lnSoopE2z1Uqa3cSFfd3AfMU8+PXmeZZlWaS1r9Z1FYCcM62wA9i2Ta7rAqDve7z3YxUB7Psu53k2wa4Mx3FIjLEKVRmmabpLOefPjyhDCOF+xDAM9U0hBEkp3cBa+33TEwCgSqC1rgIAZYwZ38A5N/KvewG750CIGBgIPQAAAABJRU5ErkJggg==');
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	position: relative;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+
+
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #F8F8F8;
+	background-size: 7px 7px;
+	background-repeat: no-repeat;
+}
+h1 {
+	border-bottom: 1px solid #EEE;
+	color: #53637D;
+	font-size: 175%;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-shadow: white 0 1px 2px;
+}
+
+h2 {
+	border-bottom: 1px solid #EEE;
+	color: #53637D;
+	font-size: 150%;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-shadow: white 0 1px 2px;
+}
+
+h3 {
+	border-bottom: 1px solid #EEE;
+	color: #53637D;
+	font-size: 120%;
+	font-weight: normal;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-shadow: white 0 1px 2px;
+}

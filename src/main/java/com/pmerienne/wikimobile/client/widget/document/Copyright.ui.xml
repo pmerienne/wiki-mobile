@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.spaced {
+			padding: 10px;	
+		}
+	</ui:style>
+
+	<g:HTMLPanel addStyleNames="{style.spaced}">
+		<br />
+		<hr />
+		<br />
+		© Copyright
+		<g:Anchor ui:field="authors" addStyleNames="external" text="auteur(s) de Wikipédia" />
+		<span> - Source : </span>
+		<g:Anchor ui:field="wikiLink" addStyleNames="external" />
+		<span> - Cet article est sous  </span>
+		<g:Anchor addStyleNames="external" href="http://creativecommons.org/licenses/by-sa/3.0/deed.fr">CC-BY-SA</g:Anchor>
+	</g:HTMLPanel>
+</ui:UiBinder> 

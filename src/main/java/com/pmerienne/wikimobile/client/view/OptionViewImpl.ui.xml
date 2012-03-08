@@ -1,0 +1,45 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mgwt="urn:import:com.googlecode.mgwt.ui.client.widget"
+	xmlns:l="urn:import:com.pmerienne.wikimobile.client.widget.list" xmlns:b="urn:import:com.googlecode.mgwt.ui.client.widget.buttonbar">
+	<ui:style>
+		.pull-right {
+			float: right;
+		}
+
+		.pull-left {
+			float: left;
+		}
+	</ui:style>
+	
+	<mgwt:LayoutPanel>
+		<mgwt:HeaderPanel>
+			<mgwt:left>
+				<mgwt:HeaderButton ui:field="nav" text="Nav"/>
+			</mgwt:left>
+			<mgwt:center>
+				<g:HTML text="Wiki Mobile" />
+			</mgwt:center>
+		</mgwt:HeaderPanel>
+
+		<mgwt:ScrollPanel>
+			<g:HTMLPanel>
+				<h2>Source des données</h2>
+				<mgwt:WidgetList round="true">
+					<l:WikiSourceListBox ui:field="wikiSourceListBox" />
+				</mgwt:WidgetList>
+				<h2>Mode offline</h2>
+				<g:Label ui:field="storageNotAvailable" text='Attention, votre navigateur ne supporte pas le "local storage"' visible="false" addStyleNames="{style.pull-right}" />
+				<mgwt:WidgetList round="true">
+					<g:HTMLPanel>
+						<g:Label text="Activation : " addStyleNames="{style.pull-left}" />
+						<mgwt:MCheckBox ui:field="offline" addStyleNames="{style.pull-right}" />
+					</g:HTMLPanel>
+					<g:HTMLPanel>
+						<mgwt:Button ui:field="clearData" text="Supprimer les données" round="true" />
+					</g:HTMLPanel>
+				</mgwt:WidgetList>
+			</g:HTMLPanel>
+		</mgwt:ScrollPanel>
+	</mgwt:LayoutPanel>
+</ui:UiBinder> 
